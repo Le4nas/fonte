@@ -1,0 +1,11 @@
+@mixin title-decor {
+    &::after{
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 12px;
+        background: url(../icons/title-dec.svg) no-repeat;
+        top: -12px;
+        right: -20px;
+    }
+}

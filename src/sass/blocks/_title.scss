@@ -1,0 +1,12 @@
+.title{
+    font-weight: 700;
+    color: $font-color;
+    &-fs40{
+        font-size: 40px;
+        line-height: 49px;
+    }
+    &-fs24{
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

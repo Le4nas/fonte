@@ -1,0 +1,102 @@
+.promo{
+    padding-top: 100px;
+    height: 100vh;
+    box-shadow: 0px 10px 100px rgba(255, 102, 0, 0.15);
+}
+.promo-slider{
+    height: 100%;
+    &__wrpapper{
+    }
+    &__slide{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // &::before{
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 600px;
+        //     z-index: -1;
+        //     background: rgba(20, 20, 20, 0.1);
+        // }
+    }
+    &__content{
+        margin-top: 100px;
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        box-shadow: 0px 10px 100px rgba(255, 102, 0, 0.15);
+        img{
+            width: 100%;
+            object-fit: 50%/cover;
+            height: 100%;
+        }
+    }
+    &__arrows{
+        position: relative;
+        height: 24px;
+    }
+    &__prev, &__next{
+        position: absolute;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover path{
+            stroke:#FF6600; 
+            stroke-opacity: 1;
+        }
+    }
+    &__prev{
+        left: 0;
+        top: 0;
+    }
+    &__next{
+        left: 39px;
+        top: 0;
+    }
+
+    &__title{
+        margin-top: 50px;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 40px;
+        width: 500px;
+    }
+    &__more{
+        margin-top: 40px;
+    }
+    &__dots{
+        margin-top: 50px;
+    }
+    &__pagination{
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        .swiper-pagination-bullet{
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            opacity: 1;
+            margin: 0;
+            &-active{
+                width: 12px;
+                height: 12px;
+                background: #FF6600;
+                box-shadow: 0px 0px 20px rgba(255, 102, 0, 0.85);
+            }
+        }
+
+    }    
+}
+
